@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "leaderboard": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
